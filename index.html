@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Emergency Service</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tailwind cdn -->
@@ -28,7 +29,7 @@
                 <img class="w-[24px]" src="./assets/coin.png" alt="">
             </div>
             <div class=" rounded-3xl flex items-center px-9 py-3 gap-2.5 text-white font-semibold bg-[#00A63E]">
-                <h1>2</h1>
+                <h1 id="copy-number">0</h1>
                 <h2>Copy</h2>
             </div>
         </div>
@@ -60,7 +61,7 @@
                         <p class="text-[18px] font-normal bg-[#F2F2F2] inline px-3 py-1.5 rounded-2xl text-[#5C5C5C]">All</p>
                         </div>    
                     <div class="flex gap-2 ">
-                        <button class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
+                        <button id="btn-card1-copy" class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
                         <button id="card-btn-1" class="btn-call border-2 w-[50%] rounded-lg bg-[#00A63E] text-white"><i class="fa-solid fa-phone p-3 mr-2 text-white"></i> Call</button>
                     </div>
                 </div>
@@ -80,7 +81,7 @@
                         <p class="text-[18px] font-normal bg-[#F2F2F2] inline px-3 py-1.5 rounded-2xl text-[#5C5C5C]">Police</p>
                         </div>    
                     <div class="flex gap-2 ">
-                        <button class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
+                        <button id="btn-card2-copy" class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
                         <button id="card-btn-2" class="btn-call border-2 w-[50%] rounded-lg bg-[#00A63E] text-white"><i id="call-icon" class="fa-solid fa-phone p-3 mr-2 text-white"></i> Call</button>
                     </div>
                 </div>
@@ -100,7 +101,7 @@
                         <p class="text-[18px] font-normal bg-[#F2F2F2] inline px-3 py-1.5 rounded-2xl text-[#5C5C5C]">Fire</p>
                         </div>    
                     <div class="flex gap-2 ">
-                        <button class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
+                        <button id="btn-card3-copy" class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
                         <button id="card-btn-3" class="btn-call border-2 w-[50%] rounded-lg bg-[#00A63E] text-white"><i id="call-icon" class="fa-solid fa-phone p-3 mr-2 text-white"></i> Call</button>
                     </div>
                 </div>
@@ -120,7 +121,7 @@
                         <p class="text-[18px] font-normal bg-[#F2F2F2] inline px-3 py-1.5 rounded-2xl text-[#5C5C5C]">Health</p>
                         </div>    
                     <div class="flex gap-2 ">
-                        <button class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
+                        <button id="btn-card4-copy" class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
                         <button id="card-btn-4" class="btn-call border-2 w-[50%] rounded-lg bg-[#00A63E] text-white"><i id="call-icon" class="fa-solid fa-phone p-3 mr-2 text-white"></i> Call</button>
                     </div>
                 </div>
@@ -140,7 +141,7 @@
                         <p class="text-[18px] font-normal bg-[#F2F2F2] inline px-3 py-1.5 rounded-2xl text-[#5C5C5C]">Help</p>
                         </div>    
                     <div class="flex gap-2 ">
-                        <button class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
+                        <button id="btn-card5-copy" class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
                         <button id="card-btn-5" class="btn-call border-2 w-[50%] rounded-lg bg-[#00A63E] text-white"><i id="call-icon" class="fa-solid fa-phone p-3 mr-2 text-white"></i> Call</button>
                     </div>
                 </div>
@@ -160,7 +161,7 @@
                         <p class="text-[18px] font-normal bg-[#F2F2F2] inline px-3 py-1.5 rounded-2xl text-[#5C5C5C]">Govt.</p>
                         </div>    
                     <div class="flex gap-2 ">
-                        <button class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
+                        <button id="btn-card6-copy" class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
                         <button id="card-btn-6" class="btn-call border-2 w-[50%] rounded-lg bg-[#00A63E] text-white"><i id="call-icon" class="fa-solid fa-phone p-3 mr-2 text-white"></i> Call</button>
                     </div>
                 </div>
@@ -180,7 +181,7 @@
                         <p class="text-[18px] font-normal bg-[#F2F2F2] inline px-3 py-1.5 rounded-2xl text-[#5C5C5C]">Electricity</p>
                         </div>    
                     <div class="flex gap-2 ">
-                        <button class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
+                        <button id="btn-card7-copy" class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
                         <button id="card-btn-7" class="btn-call border-2 w-[50%] rounded-lg bg-[#00A63E] text-white"><i id="call-icon" class="fa-solid fa-phone p-3 mr-2 text-white"></i> Call</button>
                     </div>
                 </div>
@@ -200,7 +201,7 @@
                         <p class="text-[18px] font-normal bg-[#F2F2F2] inline px-3 py-1.5 rounded-2xl text-[#5C5C5C]">NGO</p>
                         </div>    
                     <div class="flex gap-2 ">
-                        <button class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
+                        <button id="btn-card8-copy" class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
                         <button id="card-btn-8" class="btn-call border-2 w-[50%] rounded-lg bg-[#00A63E] text-white"><i id="call-icon" class="fa-solid fa-phone p-3 mr-2 text-white"></i> Call</button>
                     </div>
                 </div>
@@ -220,7 +221,7 @@
                         <p class="text-[18px] font-normal bg-[#F2F2F2] inline px-3 py-1.5 rounded-2xl text-[#5C5C5C]">Travel</p>
                         </div>    
                     <div class="flex gap-2 ">
-                        <button class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
+                        <button id="btn-card9-copy" class="border-1 border-[#5C5C5C] w-[50%] rounded-lg p-3 text-[#5C5C5C]"><i class="fa-regular fa-copy text-[#5C5C5C]"></i> Copy</button>
                         <button id="card-btn-9" class="btn-call border-2 w-[50%] rounded-lg bg-[#00A63E] text-white"><i id="call-icon" class="fa-solid fa-phone p-3 mr-2 text-white"></i> Call</button>
                     </div>
                 </div>
@@ -236,7 +237,7 @@
                     <button id="btn-clear" class="px-9 py-3 border-2 bg-[#00A63E] text-white rounded-3xl font-semibold">Clear</button>
                 </div>
                 <!-- call history cards -->
-                 <div id="call-history-div">
+                 <div class="flex flex-col gap-4" id="call-history-div">
 
                  </div>
             </div>

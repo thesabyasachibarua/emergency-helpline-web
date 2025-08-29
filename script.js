@@ -22,22 +22,6 @@ for(const heart of heartClass){
     })
 }
 
-// const callClass = document.getElementsByClassName('btn-call');
-
-// for(const call of callClass){
-//     call.addEventListener('click',function(event){
-//         event.preventDefault();
-//         alert('calling');
-//     })
-// }
-
-// function alert(id1,id2){
-//     const msg1 = id1.innerText;
-//     const msg2 = id2.innerText;
-
-//     return msg1,msg2;
-// }
-
 // clear button function
 
 document.getElementById('btn-clear').addEventListener('click',function(event){
@@ -434,5 +418,178 @@ document.getElementById('card-btn-9').addEventListener('click',function(event){
     alert('📞 Calling ' + alertVariable+'....');
 
 })
+
+// copy button functionality
+
+// card 1
+document.getElementById('btn-card1-copy').addEventListener('click',function(){
+    // alert function
+    const copyAlert = document.getElementById('card1-num').innerText;
+
+    alert('Number has been copied: ' + copyAlert);
+
+    // nav access
+   const copyNumber = parseInt(document.getElementById('copy-number').innerText);
+
+   const addedCopy = copyNumber + 1;
+
+   document.getElementById('copy-number').innerText = addedCopy;
+
+//    copy to clipboard
+    navigator.clipboard.writeText(copyAlert);
+    
+})
+
+// card 2
+document.getElementById('btn-card2-copy').addEventListener('click',function(){
+    // alert function
+    const copyAlert = document.getElementById('card2-num').innerText;
+
+    alert('Number has been copied: ' + copyAlert);
+
+    // nav access
+   const copyNumber = parseInt(document.getElementById('copy-number').innerText);
+
+   const addedCopy = copyNumber + 1;
+
+   document.getElementById('copy-number').innerText = addedCopy;
+
+//    copy to clipboard
+    navigator.clipboard.writeText(copyAlert);
+    
+})
+
+// card 3
+document.getElementById('btn-card3-copy').addEventListener('click',function(){
+    // alert function
+    const copyAlert = document.getElementById('card3-num').innerText;
+
+    alert('Number has been copied: ' + copyAlert);
+
+    // nav access
+   const copyNumber = parseInt(document.getElementById('copy-number').innerText);
+
+   const addedCopy = copyNumber + 1;
+
+   document.getElementById('copy-number').innerText = addedCopy;
+
+//    copy to clipboard
+    navigator.clipboard.writeText(copyAlert);
+    
+})
+
+// card 4
+
+document.getElementById('btn-card4-copy').addEventListener('click',function(){
+    // alert function
+    const copyAlert = document.getElementById('card4-num').innerText;
+
+    alert('Number has been copied: ' + copyAlert);
+
+    // nav access
+   const copyNumber = parseInt(document.getElementById('copy-number').innerText);
+
+   const addedCopy = copyNumber + 1;
+
+   document.getElementById('copy-number').innerText = addedCopy;
+
+//    copy to clipboard
+    navigator.clipboard.writeText(copyAlert);
+    
+})
+
+// card 5
+document.getElementById('btn-card5-copy').addEventListener('click',function(){
+    // alert function
+    const copyAlert = document.getElementById('card5-num').innerText;
+
+    alert('Number has been copied: ' + copyAlert);
+
+    // nav access
+   const copyNumber = parseInt(document.getElementById('copy-number').innerText);
+
+   const addedCopy = copyNumber + 1;
+
+   document.getElementById('copy-number').innerText = addedCopy;
+
+//    copy to clipboard
+    navigator.clipboard.writeText(copyAlert);
+    
+})
+
+// card 6
+
+document.getElementById('btn-card6-copy').addEventListener('click',function(){
+    // alert function
+    const copyAlert = document.getElementById('card6-num').innerText;
+
+    alert('Number has been copied: ' + copyAlert);
+
+    // nav access
+   const copyNumber = parseInt(document.getElementById('copy-number').innerText);
+
+   const addedCopy = copyNumber + 1;
+
+   document.getElementById('copy-number').innerText = addedCopy;
+
+//    copy to clipboard
+    navigator.clipboard.writeText(copyAlert);
+    
+})
+// card 7
+document.getElementById('btn-card7-copy').addEventListener('click',function(){
+    // alert function
+    const copyAlert = document.getElementById('card7-num').innerText;
+
+    alert('Number has been copied: ' + copyAlert);
+
+    // nav access
+   const copyNumber = parseInt(document.getElementById('copy-number').innerText);
+
+   const addedCopy = copyNumber + 1;
+
+   document.getElementById('copy-number').innerText = addedCopy;
+
+//    copy to clipboard
+    navigator.clipboard.writeText(copyAlert);
+    
+})
+// card 8
+document.getElementById('btn-card8-copy').addEventListener('click',function(){
+    // alert function
+    const copyAlert = document.getElementById('card8-num').innerText;
+
+    alert('Number has been copied: ' + copyAlert);
+
+    // nav access
+   const copyNumber = parseInt(document.getElementById('copy-number').innerText);
+
+   const addedCopy = copyNumber + 1;
+
+   document.getElementById('copy-number').innerText = addedCopy;
+
+//    copy to clipboard
+    navigator.clipboard.writeText(copyAlert);
+    
+})
+// card 9
+document.getElementById('btn-card9-copy').addEventListener('click',function(){
+    // alert function
+    const copyAlert = document.getElementById('card9-num').innerText;
+
+    alert('Number has been copied: ' + copyAlert);
+
+    // nav access
+   const copyNumber = parseInt(document.getElementById('copy-number').innerText);
+
+   const addedCopy = copyNumber + 1;
+
+   document.getElementById('copy-number').innerText = addedCopy;
+
+//    copy to clipboard
+    navigator.clipboard.writeText(copyAlert);
+    
+})
+
 
 
